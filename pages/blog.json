@@ -1,0 +1,17 @@
+{
+	"title": "Home",
+	"type": "blog",
+	"prefix": "<h1>StaticCMS Blog Page</h1>",
+	"entries": [
+		{
+			"title": "Hi",
+			"time": 0,
+			"body": "Words"
+		},
+		{
+			"title": "Hi 2",
+			"time": 100000000,
+			"body": "More words"
+		}
+	]
+}
