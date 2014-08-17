@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creator - StaticCMS</title>
+		<meta charset="utf-8" />
+		<style>@charset "UTF-8";</style>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.3.3/css/foundation.min.css" />
+	</head>
+	<body>
+		<div>
+			<h1><code>page.json</code> Creator</h1>
+			<h2>Basic Information</h2>
+			<label>
+				<h3>Page Name</h3>
+				<input type="text" data-name="title" />
+			</label>
+			<label>
+				<h3>Page Type</h3>
+				<select data-name="type">
+					<option value="default">Default (Just text and HTML)</option>
+					<option value="blog">Blog</option>
+				</select>
+			</label>
+			<h2>Content</h2>
+			<div id="ptype-default">
+				<h3>Can include HTML</h3>
+				<textarea data-name="body" style="height: 40%;"></textarea>
+			</div>
+			<div id="ptype-blog">
+				<label>
+					<h3>Page header</h3>
+					<textarea data-name="prefix"></textarea>
+				</label>
+				<div id="posts">
+					
+				</div>
+				<a class="small button" href="#" onclick="addBlogPost();">+ Add Post</a>
+			</div>
+			<a class="large button" href="#" onclick="generate();" style="position: fixed; top: 0%; right: 0%;">&gt; Create!</a>
+		</div>
+		<div id="pagejson" class="reveal-modal" data-reveal="data-reveal">
+			<h2>Your page.json:</h2>
+			<textarea id="pagejsoncontent"></textarea>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+		<script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.jsdelivr.net/foundation/5.3.3/js/foundation.min.js"></script>
+		<script src="creator.js"></script>
+	</body>
+</html>
