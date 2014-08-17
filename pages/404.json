@@ -1,0 +1,6 @@
+{
+	"title": "404 - Not Found",
+	"type": "default",
+	"prefix": "",
+	"body": "<h1>404 - Not Found</h1><h2>That page doesn't exist (Awww!).</h2>"
+}
