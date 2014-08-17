@@ -1,0 +1,12 @@
+{
+	"title": "StaticCMS",
+	"pages": [
+		"blog",
+		"404",
+		"newpage"
+	],
+	"main": "blog",
+	"hide": [
+		"404"
+	]
+}
