@@ -1,4 +1,4 @@
-homepage
+StaticCMS
 ========
 
-A single page for your every need.
+A CMS without the need for server-side code.
